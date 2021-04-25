@@ -1,0 +1,85 @@
+
+
+
+<form action="/users/dashboard" method="POST">
+    <h1 class="mt-4">Leave Application Form</h1>
+    <p class="lead mb-3 ">Welcome <%= user.name %>
+    </p>
+    <a href="/users/logout" class="btn btn-secondary">Logout</a>
+<div class="form-group">
+    
+    <label for="inputState" name="Leave_Type">Leave Type</label>
+    <select id="inputState" class="form-control aaa" name="Leave_Type">
+        <option selected name="Leave_Type">Choose...</option>
+        <option>Sick</option>
+        <option>Paid Leave</option>
+        <option>Casual</option>
+
+    </select>
+</div>
+<div class="col">
+<div class="form-group row"name="Leave_From">
+    <label for="example-date-input" class="col-2 col-form-label " name="Leave_From">Leave From</label>
+    <div class="">
+        <input class="form-control aaa" type="date" value="2011-08-19" id="example-date-input"name="Leave_From">
+    </div>
+</div>
+<div class="form-group row " name="Leave_To">
+    <label for="example-date-input" class="col-2 col-form-label " name="Leave_To">Leave To</label>
+    <div class="">
+        <input class="form-control aaa" type="date" value="2011-08-19" id="example-date-input"name="Leave_To">
+    </div>
+</div>
+</div>
+
+  
+    <button type="submit" class="btn btn-primary">Apply</button>
+</form>
+
+
+
+
+
+<style>
+body {
+  
+  margin:0px;
+  font-family: 'Ubuntu', sans-serif;
+	background-size: 100% 110%;
+}
+
+    form {
+        border: 3px solid #f1f1f1;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+    padding: 10px;
+    }
+
+
+
+    .aaa {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+
+
